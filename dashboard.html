@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="dashboard">
+  <!-- hidden rehta hai jab tak JS session check na kar le -->
+  <main id="dashboard" class="card wide" hidden>
+    <header class="dash-head">
+      <h1>Dashboard</h1>
+      <button id="logoutBtn" class="btn small danger" type="button">Logout</button>
+    </header>
+
+    <p class="welcome">Welcome, <strong id="welcomeName"></strong> 👋</p>
+
+    <ul class="info">
+      <li><span>Username</span><strong id="infoUsername"></strong></li>
+      <li><span>Email</span><strong id="infoEmail"></strong></li>
+      <li><span>Member since</span><strong id="infoCreated"></strong></li>
+      <li><span>Signed in at</span><strong id="infoLogin"></strong></li>
+    </ul>
+
+    <p class="note">This page is protected. Without a valid session you are sent back to the login page.</p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

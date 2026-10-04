@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="login">
+  <main class="card">
+    <h1>Welcome back</h1>
+    <p class="sub">Login to open your dashboard.</p>
+
+    <form id="loginForm" novalidate>
+      <label for="identifier">Username or email</label>
+      <input id="identifier" type="text" autocomplete="username" placeholder="Username or email">
+
+      <label for="password">Password</label>
+      <input id="password" type="password" autocomplete="current-password" placeholder="Your password">
+
+      <p id="message" class="message" role="alert" hidden></p>
+      <button type="submit" class="btn">Login</button>
+    </form>
+
+    <p class="switch">New here? <a href="register.html">Create an account</a></p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
